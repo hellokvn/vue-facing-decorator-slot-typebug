@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Component, Vue, Prop, toNative } from "vue-facing-decorator";
+import { Component, Vue, Prop } from "vue-facing-decorator";
 
 @Component
 export default class Child extends Vue {

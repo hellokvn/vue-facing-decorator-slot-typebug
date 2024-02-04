@@ -1,7 +1,5 @@
-<script setup lang="ts" generic="T">
-import { ref } from "vue";
-
-defineProps<{ msg: T }>();
+<script setup lang="ts">
+defineProps<{ msg: string }>();
 
 const count: number = 0;
 </script>
