@@ -9,5 +9,7 @@ export default class Parent extends Vue {}
 </script>
 
 <template>
-  <Child :msg="2" v-slot="{ count }">{{ count }}</Child>
+  <div>Class Component</div>
+  <Child msg="Class" v-slot="{ count, msg }">{{ count }} {{ msg }}</Child>
+  <!-- count is any, msg is any -->
 </template>

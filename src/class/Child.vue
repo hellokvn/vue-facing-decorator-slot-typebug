@@ -1,10 +1,10 @@
-<script lang="ts" generic="T">
+<script lang="ts">
 import { Component, Vue, Prop, toNative } from "vue-facing-decorator";
 
 @Component
-export default class Child<T> extends Vue {
+export default class Child extends Vue {
   @Prop()
-  public readonly msg!: T;
+  public readonly msg!: string;
 
   public count: number = 0;
 }
@@ -12,6 +12,6 @@ export default class Child<T> extends Vue {
 
 <template>
   <div>Prop: {{ msg }}</div>
-  <div>Ref: {{ count }}</div>
-  <div>Slot: <slot :count="count"></slot></div>
+  <div>State: {{ count }}</div>
+  <div>Slot: <slot :count="count" :msg="msg"></slot></div>
 </template>

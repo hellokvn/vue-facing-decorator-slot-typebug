@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import Parent from "./class/Parent.vue";
+import ParentClass from "./class/Parent.vue";
+import Parent from "./components/Parent.vue";
 </script>
 
 <template>
+  <ParentClass />
+  <hr style="width: 200px" />
   <Parent />
 </template>
